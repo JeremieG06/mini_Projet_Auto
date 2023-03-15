@@ -38,7 +38,7 @@
     </input>
     <label class="instruc">Date de fin de votre enchère :</label>
     <br />
-    <input name="date de fin" type="">
+    <input name="date de fin" type="date">
     </input>
     <label class="instruc">Modèle de votre véhicule :</label>
     <br />
