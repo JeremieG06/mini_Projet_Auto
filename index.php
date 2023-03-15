@@ -32,33 +32,33 @@
   <form method="POST">
     <link rel="stylesheet" type="text/css" href="index.css">
     <h2>Annonce Voiture</h2>
-    <label class="insctruc">Votre prix de départ :</label>
-    <br/>
-    <input name="prix d" type="texte" placeholder="prix de depart">
+    <label class="instruc">Votre prix de départ :</label>
+    <br />
+    <input name="prix d" type="texte" >
     </input>
-    <label class="insctruc">Date de fin de votre enchère :</label>
-    <br/>
-    <input name="date de fin" type="texte" placeholder="date de fin">
+    <label class="instruc">Date de fin de votre enchère :</label>
+    <br />
+    <input name="date de fin" type="">
     </input>
-    <label class="insctruc">Modèle de votre véhicule :</label>
-    <br/>
-    <input name="modele" type="texte" placeholder="modele">
+    <label class="instruc">Modèle de votre véhicule :</label>
+    <br />
+    <input name="modele" type="texte">
     </input>
-    <label class="insctruc">Marque de votre véhicule :</label>
-    <br/>
-    <input name="marque" type="texte" placeholder="marque">
+    <label class="instruc">Marque de votre véhicule :</label>
+    <br />
+    <input name="marque" type="texte">
     </input>
-    <label class="insctruc">Puissance de votre véhicule :</label>
-    <br/>
-    <input name="puissance" type="texte" placeholder="puissance">
+    <label class="instruc">Puissance de votre véhicule :</label>
+    <br />
+    <input name="puissance" type="texte">
     </input>
-    <label class="insctruc">Année de votre véhicule :</label>
-    <br/>
-    <input name="année" type="texte" placeholder="année">
+    <label class="instruc">Année de votre véhicule :</label>
+    <br />
+    <input name="année" type="texte">
     </input>
-    <label class="insctruc">Description de votre véhicule :</label>
-    <br/>
-    <input name="description" type="texte" placeholder="description">
+    <label class="instruc">Description de votre véhicule :</label>
+    <br />
+    <input name="description" type="texte">
     </input>
     <button class="buttonSub"> valider </button>
   </form>

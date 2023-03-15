@@ -53,6 +53,7 @@ font-family: 'Helvetica', 'Arial Narrow', Arial, sans-serif;
     text-align:center;
     font-family: Arial, Helvetica, sans-serif;
     color: #FF4500;
+    font-size: 70px;
     }
     input{
             margin-bottom: 45px;
@@ -75,8 +76,12 @@ font-family: 'Helvetica', 'Arial Narrow', Arial, sans-serif;
             width:150px;
     }
 
-    .label.instruc{
-        font-size: medium;
+    label.instruc{
+        display: flex;
+        float: right;
+        font-size: small;
+        font-weight: bold;
+    
 
 
     }
