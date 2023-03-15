@@ -1,45 +1,43 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
 
-    <title>Intitulé de ma page</title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sonsie+One" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="style.css">
+<head>
+  <meta charset="utf-8">
+  <title>Intitulé de ma page</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/d4ade387aa.js" crossorigin="anonymous"></script>
+</head>
 
-    <!-- Les trois lignes ci‑dessous sont un correctif pour que la sémantique
-          HTML5 fonctionne correctement avec les anciennes versions de
-          Internet Explorer-->
-    <!--[if lt IE 9]>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
-    <![endif]-->
-  </head>
+<body>
 
-  <body>
-    <!-- Voici notre en‑tête principale utilisée dans toutes les pages
-          de notre site web -->
-    <header>
-      <h1>En-tête</h1>
-    </header>
-
-    <nav>
-      <ul>
-        <li><a href="#">Accueil</a></li>
-        <li><a href="#">L'équipe</a></li>
-        <li><a href="#">Projets</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
+  <header>
+  <img src="./Images/logo.png" alt="voiture"/>
 
 
-      </nav>
-
-    <!-- Ici nous mettons le contenu de la page -->
+  <div class="title">
+    <h1>Vectus Enchères</h1>
+  </div>
     
+  </header>
 
-    <!-- Et voici notre pied de page utilisé sur toutes les pages du site -->
-    <footer>
-      <p>©Copyright 2050 par personne. Tous droits reversés.</p>
-    </footer>
+  <nav>
+    <div class="topnav">
+      <a class="active" href="#home"><i class="fa-solid fa-house-chimney"></i></a>
+      <a href="#Annonces">Annonces</a>
+      <a class="compte" href="#Compte">Mon Compte</a>
 
-  </body>
+    </div>
+
+  </nav>
+
+
+
+
+
+  <footer>
+   
+  </footer>
+
+</body>
+
 </html>
