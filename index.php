@@ -30,7 +30,7 @@
 
   </nav>
   <form method="POST">
-    <link rel="stylesheet" type="text/css" href="index.css">
+    
     <h2>Annonce Voiture</h2>
     <label class="instruc">Votre prix de départ :</label>
     <br />
