@@ -11,13 +11,13 @@
 <body>
 
   <header>
-  <img src="./Images/logo.png" alt="voiture"/>
+    <img src="./Images/logo.png" alt="voiture" />
 
 
-  <div class="title">
-    <h1>Vectus Enchères</h1>
-  </div>
-    
+    <div class="title">
+      <h1>Vectus Enchères</h1>
+    </div>
+
   </header>
 
   <nav>
@@ -29,13 +29,31 @@
     </div>
 
   </nav>
-
+  <form method="POST">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <h2>Annonce Voiture</h2>
+    <input name="prix d" type="texte" placeholder="prix de depart">
+    </input>
+    <input name="date de fin" type="texte" placeholder="date de fin">
+    </input>
+    <input name="modele" type="texte" placeholder="modele">
+    </input>
+    <input name="marque" type="texte" placeholder="marque">
+    </input>
+    <input name="puissance" type="texte" placeholder="puissance">
+    </input>
+    <input name="année" type="texte" placeholder="année">
+    </input>
+    <input name="description" type="texte" placeholder="description">
+    </input>
+    <button class="buttonSub"> valider </button>
+  </form>
 
 
 
 
   <footer>
-   
+
   </footer>
 
 </body>
