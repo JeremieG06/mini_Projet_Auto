@@ -55,7 +55,19 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $query->bindParam(":annee", $_POST["annee"]);
     $query->bindParam(":description", $_POST["description"]);
 
-    
+    // POST sur formulaire compte
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  // Je récupère les informations et je crée l'instance 
+  $users = new users compte(
+    $_POST["lastname"],
+    $_POST["firstname"], // Ajout du nom des clés correspondantes pour chaque propriété du compte
+    $_POST["email"],
+    $_POST["password"],
+  );
+  var_dump($users);
+  //Query pour creation d'un compte - connexion avec la database
+
+   
    
 
 }
