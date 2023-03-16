@@ -1,32 +1,33 @@
 <?php
 
-class Voiture  {
+class Voiture
+{
 
   public $image;
 
-   private int $prixDepart;
+  private int $prixDepart;
 
-   public $dateFin;
+  public $dateFin;
 
-   public $modele;
+  public $modele;
 
-   public $marque;
+  public $marque;
 
-   public $puissance;
+  public $puissance;
 
-   private $annee;
+  private $annee;
 
-   public $description;
+  public $description;
 
 
-   public function __construct($image, $prixDepart, $dateFin, $modele, $marque, $puissance, $annee, $description )
+  public function __construct($image, $prixDepart, $dateFin, $modele, $marque, $puissance, $annee, $description)
   {
     $this->image = $image;
     $this->prixDepart = $prixDepart;
     $this->dateFin = $dateFin;
     $this->modele = $modele;
     $this->marque = $marque;
-    $this->puissance= $puissance;
+    $this->puissance = $puissance;
     $this->annee = $annee;
     $this->description = $description;
   }
@@ -52,18 +53,4 @@ class Voiture  {
   {
     $this->annee = $annee;
   }
-
-
-
-
-
 }
-
-
-
-
-
-
-
-
-?>
