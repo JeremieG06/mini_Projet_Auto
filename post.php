@@ -16,7 +16,7 @@ $query->execute(); // Execution de la requête préparée
 $results = $query->fetchAll();
 //Query pour ajout d'un USER connexion avec la database
 $query = $dbh->prepare("INSERT INTO users (lastname, firstname, email, password) VALUES (:lastname, :firstname, :email, :password)");
-$image->bindParam(":lastname", $lastname);
+$query->bindParam(":lastname", $lastname);
 $query->bindParam(":firstname", $firstname);
 $query->bindParam(":email", $email);
 $query->bindParam(":password", $password);
@@ -38,9 +38,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     );
     var_dump($voiture);
 
-    //Query pour ajout d'una annonce voiture connexion avec la database
+    //Query pour ajout d'une annonce voiture connexion avec la database
     $query = $dbh->prepare("INSERT INTO ads (image, prixDepart, dateFin, modele, marque, puissance, année, description) VALUES (:image, :prixDepart, :dateFin, :modele, :marque, :puissance, :année, :description)");
-    $image->bindParam(":image", $image);
+    $query->bindParam(":image", $image);
     $query->bindParam(":prixDepart", $prixDepart);
     $query->bindParam(":dateFin", $dateFin);
     $query->bindParam(":modele", $modele);
