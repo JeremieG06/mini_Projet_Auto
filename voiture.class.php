@@ -53,4 +53,17 @@ class Voiture
   {
     $this->annee = $annee;
   }
+
+  public function afficherInfoVoiture()
+  {
+    echo "<h2>Récapitulatif de l'annonce :</h2>";
+    echo "<p>Image : {$this->image} </p>";
+    echo "<p>Prix de départ : {$this->prixDepart} </p>";
+    echo "<p>Date de fin : {$this->dateFin} </p>";
+    echo "<p>Modèle : {$this->modele}</p>";
+    echo "<p>Marque : {$this->marque} </p>";
+    echo "<p>Puissance :  {$this->puissance}</p>";
+    echo "<p>Année :  {$this->annee}</p>";
+    echo "<p>Description :{$this->description}</p>";
+  }
 }

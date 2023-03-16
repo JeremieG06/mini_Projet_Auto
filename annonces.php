@@ -14,7 +14,6 @@
     <header>
         <img src="./Images/logo.png" alt="voiture" />
 
-
         <div class="title">
             <h1>Vectus Enchères</h1>
         </div>
@@ -28,10 +27,13 @@
         </div>
     </nav>
 
-
-
-
-
+    <?php
+    require_once(__DIR__ . '/voiture.class.php');
+    require_once(__DIR__ . '/post.voiture.php');
+    ?>
+    <!-- Fonction affichage des annonces-->
+    <?php
+    $voiture->afficherInfoVoiture(); ?>
 
 </body>
 

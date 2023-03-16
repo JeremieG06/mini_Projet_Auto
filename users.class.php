@@ -13,8 +13,6 @@ class users
       $this->firstname = $firstname;
       $this->email = $email;
       $this->password = $password;
-
-
    }
 
    public function getlastname()
@@ -56,5 +54,4 @@ class users
    {
       return $this->password = $password;
    }
-
 }
