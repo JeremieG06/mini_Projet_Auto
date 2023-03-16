@@ -24,7 +24,7 @@
     <div class="topnav">
       <a class="active" href="#home"><i class="fa-solid fa-house-chimney"></i></a>
       <a href="#Annonces">Annonces</a>
-      <a class="compte" href="compte">Mon Compte</a>
+      <a class="compte" href="compte.php">Mon Compte</a>
 
     </div>
 
