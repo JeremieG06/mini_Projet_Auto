@@ -28,25 +28,25 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Je récupère les informations et je crée l'instance 
     $voiture = new Voiture(
         $_POST["image"],
-        $_POST["prixDépart"], // Ajout du nom des clés correspondantes pour chaque propriété de Voiture
+        $_POST["prixDepart"], // Ajout du nom des clés correspondantes pour chaque propriété de Voiture
         $_POST["dateFin"],
         $_POST["modele"],
         $_POST["marque"],
         $_POST["puissance"],
-        $_POST["année"],
+        $_POST["annee"],
         $_POST["description"]
     );
     var_dump($voiture);
 
     //Query pour ajout d'une annonce voiture connexion avec la database
-    $query = $dbh->prepare("INSERT INTO ads (image, prixDepart, dateFin, modele, marque, puissance, année, description) VALUES (:image, :prixDepart, :dateFin, :modele, :marque, :puissance, :année, :description)");
+    $query = $dbh->prepare("INSERT INTO ads (image, prixDepart, dateFin, modele, marque, puissance, annee, description) VALUES (:image, :prixDepart, :dateFin, :modele, :marque, :puissance, :annee, :description)");
     $query->bindParam(":image", $image);
     $query->bindParam(":prixDepart", $prixDepart);
     $query->bindParam(":dateFin", $dateFin);
     $query->bindParam(":modele", $modele);
     $query->bindParam(":marque", $marque);
     $query->bindParam(":puissance", $puissance);
-    $query->bindParam(":année", $année);
+    $query->bindParam(":annee", $annee);
     $query->bindParam(":description", $description);
     $query->execute();
 

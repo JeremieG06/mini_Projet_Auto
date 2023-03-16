@@ -4,7 +4,7 @@ class Voiture  {
 
   public $image;
 
-   private int $prixDépart;
+   private int $prixDepart;
 
    public int $dateFin;
 
@@ -14,43 +14,43 @@ class Voiture  {
 
    public $puissance;
 
-   private $année;
+   private $annee;
 
    public $description;
 
 
-   public function __construct($image, $prixDépart, $dateFin, $modele, $marque, $puissance, $année, $description )
+   public function __construct($image, $prixDepart, $dateFin, $modele, $marque, $puissance, $annee, $description )
   {
     $this->image = $image;
-    $this->prixDépart = $prixDépart;
+    $this->prixDepart = $prixDepart;
     $this->dateFin = $dateFin;
     $this->modele = $modele;
     $this->marque = $marque;
     $this->puissance= $puissance;
-    $this->année = $année;
+    $this->annee = $annee;
     $this->description = $description;
   }
 
 
-  public function getPrixDépart()
+  public function getPrixDepart()
   {
-    return $this->prixDépart;
+    return $this->prixDepart;
   }
 
-  public function setPrixDépart($prixDépart)
+  public function setPrixDepart($prixDepart)
   {
-    $this->prixDépart = $prixDépart;
+    $this->prixDepart = $prixDepart;
   }
 
 
-  public function getAnnée()
+  public function getannee()
   {
-    return $this->année;
+    return $this->annee;
   }
 
-  public function setAnnée($année)
+  public function setannee($annee)
   {
-    $this->année = $année;
+    $this->annee = $annee;
   }
 
 
