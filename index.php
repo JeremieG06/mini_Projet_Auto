@@ -25,10 +25,9 @@
       <a class="active" href="index.php"><i class="fa-solid fa-house-chimney"></i></a>
       <a href="annonces.php">Annonces</a>
       <a class="compte" href="compte.php">Mon Compte</a>
-
     </div>
-
   </nav>
+
   <form action="post.voiture.php" method="POST">
 
     <h2>Annonce Voiture</h2>
