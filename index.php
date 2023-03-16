@@ -39,7 +39,7 @@
     </input>
     <label class="instruc">Votre prix de départ :</label>
     <br />
-    <input name="prixDépart" type="texte">
+    <input name="prixDepart" type="texte">
     </input>
     <label class="instruc">Date de fin de votre enchère :</label>
     <br />
