@@ -69,6 +69,31 @@
 
   </form>
 
+  <?php
+  if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $image = $_POST["image"];
+    $prixDepart = $_POST["prixDepart"];
+    $dateFin = $_POST["dateFin"];
+    $modele = $_POST["modele"];
+    $marque = $_POST["marque"];
+    $puissance = $_POST["puissance"];
+    $année = $_POST["année"];
+    $description = $_POST["description"];
+
+
+    $query = $dbh->prepare("INSERT INTO annonce (image, prixDepart,dateFin, modele, marque, puissance, année,) VALUES (:image :prixDepart, :dateFin, :modele, :marque, :puissance, :année,)");
+    $image->bindParam(":image", $image);
+    $query->bindParam(":prixDepart", $prixDepart);
+    $query->bindParam(":dateFin", $dateFin);
+    $query->bindParam(":modele", $modele);
+    $query->bindParam(":marque", $marque);
+    $query->bindParam(":puissance", $puissance);
+    $query->bindParam(":année", $année);
+    $query->bindParam(":description", $description);
+    $query->execute();
+
+    echo "Annonce ajouté avec succès !";
+  }
 
   ?>
 
