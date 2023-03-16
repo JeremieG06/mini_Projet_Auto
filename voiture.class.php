@@ -2,6 +2,8 @@
 
 class Voiture  {
 
+  public $image;
+
    private int $prixDépart;
 
    public int $dateFin;
@@ -17,8 +19,9 @@ class Voiture  {
    public $description;
 
 
-   public function __construct($prixDépart, $dateFin, $modele, $marque, $puissance, $année, $description )
+   public function __construct($image, $prixDépart, $dateFin, $modele, $marque, $puissance, $année, $description )
   {
+    $this->image = $image;
     $this->prixDépart = $prixDépart;
     $this->dateFin = $dateFin;
     $this->modele = $modele;

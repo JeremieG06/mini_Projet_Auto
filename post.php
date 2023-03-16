@@ -17,6 +17,7 @@ $results = $query->fetchAll();
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Je récupère les informations et je crée l'instance 
     $voiture = new Voiture(
+        $_POST["image"],
         $_POST["prixDépart"], // Ajout du nom des clés correspondantes pour chaque propriété de Voiture
         $_POST["dateFin"],
         $_POST["modele"],
