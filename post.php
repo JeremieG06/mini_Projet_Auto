@@ -58,7 +58,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // POST sur formulaire compte
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
   // Je récupère les informations et je crée l'instance 
-  $users = new users compte(
+  $users = new users (
     $_POST["lastname"],
     $_POST["firstname"], // Ajout du nom des clés correspondantes pour chaque propriété du compte
     $_POST["email"],
@@ -68,6 +68,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   //Query pour creation d'un compte - connexion avec la database
 
    
-   
+  if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    echo "<h2>Récapitulatif de l'annonce :</h2>";
+    echo "<p>Image : " . $_POST["image"] . "</p>";
+    echo "<p>Prix de départ : " . $_POST["prixDepart"] . "</p>";
+    echo "<p>Date de fin : " . $_POST["dateFin"] . "</p>";
+    echo "<p>Modèle : " . $_POST["modele"] . "</p>";
+    echo "<p>Marque : " . $_POST["marque"] . "</p>";
+    echo "<p>Puissance : " . $_POST["puissance"] . "</p>";
+    echo "<p>Année : " . $_POST["annee"] . "</p>";
+    echo "<p>Description : " . $_POST["description"] . "</p>";
+}
 
+}
 }
