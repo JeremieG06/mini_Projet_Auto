@@ -19,10 +19,6 @@ try {
 }
 
 
-
-
-
-
 // Lecture de la réponse pour USERS
 $result = $dbh->query("SELECT * FROM users");
 // Requête pour USERS
@@ -54,7 +50,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     var_dump($voiture);
 
     //Query pour ajout d'une annonce voiture - connexion avec la database
-    $query = $dbh->prepare("INSERT INTO ads (image, prixDepart, dateFin, modele, marque, puissance, annee, description) VALUES (:image, :prixDepart, :dateFin, :modele, :marque, :puissance, :annee, :description)");
+    $query = $dbh->prepare("INSERT INTO ads (image, prixDepart, dateFin, modele, marque, puissance, annee, description) VALUES ('image', 'prixDepart', 'dateFin', 'modele', 'marque', 'puissance', 'annee', 'description')");
     $query->bindParam(":image", $image);
     $query->bindParam(":prixDepart", $prixDepart);
     $query->bindParam(":dateFin", $dateFin);
