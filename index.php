@@ -81,8 +81,8 @@
     $description = $_POST["description"];
 
 
-    $query = $dbh->prepare("INSERT INTO annonce (image, prixDepart,dateFin, modele, marque, puissance, année,) VALUES (:image :prixDepart, :dateFin, :modele, :marque, :puissance, :année,)");
-    $image->bindParam(":image", $image);
+    $query = $dbh->prepare("INSERT INTO annonce (image, prixDepart,dateFin, modele, marque, puissance, année, description) VALUES (:image :prixDepart, :dateFin, :modele, :marque, :puissance, :année, :description)");
+    $query->bindParam(":image", $image);
     $query->bindParam(":prixDepart", $prixDepart);
     $query->bindParam(":dateFin", $dateFin);
     $query->bindParam(":modele", $modele);
