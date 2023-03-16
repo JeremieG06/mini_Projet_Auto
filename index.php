@@ -22,8 +22,8 @@
 
   <nav>
     <div class="topnav">
-      <a class="active" href="#home"><i class="fa-solid fa-house-chimney"></i></a>
-      <a href="#Annonces">Annonces</a>
+      <a class="active" href="index.php"><i class="fa-solid fa-house-chimney"></i></a>
+      <a href="annonces.php">Annonces</a>
       <a class="compte" href="compte.php">Mon Compte</a>
 
     </div>
@@ -66,10 +66,7 @@
     <input name="description" type="texte">
     </input>
     <button class="buttonSub"> valider </button>
-    
   </form>
-
-
 
   <footer>
 
