@@ -39,3 +39,4 @@ $query->bindParam(":lastname", $lastname);
 $query->bindParam(":firstname", $firstname);
 $query->bindParam(":email", $email);
 $query->bindParam(":password", $password);
+// $query->execute();

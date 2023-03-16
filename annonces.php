@@ -27,13 +27,8 @@
         </div>
     </nav>
 
-    <?php
-    require_once(__DIR__ . '/voiture.class.php');
-    require_once(__DIR__ . '/post.voiture.php');
-    ?>
-    <!-- Fonction affichage des annonces-->
-    <?php
-    $voiture->afficherInfoVoiture(); ?>
+    <h3>Consulter les annonces</h3>
+    <!-- Rappeler la fonction FOR EACH -->
 
 </body>
 

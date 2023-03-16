@@ -28,7 +28,7 @@
     </nav>
     <form action="post.users.php" method="POST">
         <link rel="stylesheet" href="style.css">
-        <h2>Crée un compte</h2>
+        <h2>Créer un compte</h2>
 
         <label class="compte">Lastname</label>
         <br />
