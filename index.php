@@ -24,7 +24,7 @@
     <div class="topnav">
       <a class="active" href="#home"><i class="fa-solid fa-house-chimney"></i></a>
       <a href="#Annonces">Annonces</a>
-      <a class="compte" href="#Compte">Mon Compte</a>
+      <a class="compte" href="http://localhost/mini_Projet_Auto/compte">Mon Compte</a>
 
     </div>
 
@@ -66,7 +66,7 @@
     <input name="description" type="texte">
     </input>
     <button class="buttonSub"> valider </button>
-
+    
   </form>
 
   <?php
