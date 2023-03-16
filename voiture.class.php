@@ -6,7 +6,7 @@ class Voiture  {
 
    private int $prixDepart;
 
-   public int $dateFin;
+   public $dateFin;
 
    public $modele;
 

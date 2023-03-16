@@ -5,7 +5,24 @@ require_once(__DIR__ . '/index.php');
 
 
 // PDO DATABASE
-$dbh = new PDO("mysql:dbname=mini_projet_auto_enchere;host=127.0.0.1", "root", "");
+
+
+
+try {
+    $dbh = new PDO("mysql:dbname=mini_projet_auto_enchere;host=127.0.0.1", "root", "");
+    foreach($dbh->query('SELECT * from ads') as $row) {
+        print_r($row);
+    }
+    
+} catch (PDOException $e) {
+    print "Erreur !: " . $e->getMessage() . "<br/>";
+    die();
+}
+
+
+
+
+
 
 // Lecture de la réponse pour USERS
 $result = $dbh->query("SELECT * FROM users");
