@@ -29,7 +29,7 @@
     </div>
 
   </nav>
-  <form action="post.php" method="POST">
+  <form action="post.voiture.php" method="POST">
 
     <h2>Annonce Voiture</h2>
 
