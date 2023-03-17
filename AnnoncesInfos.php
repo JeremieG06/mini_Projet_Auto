@@ -25,6 +25,8 @@ function afficher()
             <li> Année du véhicule :" . $data['car_year'] . "</li>
             </br>
             <li> Description : " . $data['description'] . "</li>
-            </ul> </br>";
+            </ul> </br>
+            <button id='Informations".$data['id']."'>Informations annonce </button>
+            </br>";
     }
 }
