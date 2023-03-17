@@ -27,9 +27,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $_POST["annee"],
         $_POST["description"]
     );
-    // header('Location: http://localhost/Mini_Projet/mini_Projet_Auto/annonces.php');
 
-    //Query pour ajout d'une annonce voiture - connexion avec la database
+    //AJOUT d'une annonce voiture - connexion avec la database
     $query = $dbh->prepare("INSERT INTO `ads` (`image`, `starting_price`, `closing_date`, `car_model`,`car_brand`, `engine_power`, `car_year`, `description`) 
                             VALUES (:image, :prixDepart, :dateFin, :modele, :marque, :puissance, :annee, :description)");
     $query->bindValue(":image", $_POST["image"]);
@@ -41,4 +40,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $query->bindValue(":annee", $_POST["annee"]);
     $query->bindValue(":description", $_POST["description"]);
     $query->execute();
+
+    //RECUPERER les annonces depuis la DB pour affichage FOR EACH
+    $dbh = new PDO("mysql:dbname=mini_projet_auto_enchere;host=127.0.0.1", "root", "");
+    $query = $dbh->prepare('SELECT * FROM ads');
+    $query->execute(); // Execution de la requête préparée
+    $results = $query->fetchAll(); // Récupération des datas
+    var_dump($results);
 }

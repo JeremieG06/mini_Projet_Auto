@@ -1,3 +1,6 @@
+<?php
+// require_once(__DIR__ . '/post.voiture.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -28,7 +31,7 @@
     </nav>
 
     <h3>Consulter les annonces</h3>
-    <!-- Rappeler la fonction FOR EACH -->
+
 
 </body>
 

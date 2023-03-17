@@ -30,23 +30,23 @@
         <link rel="stylesheet" href="style.css">
         <h2>Créer un compte</h2>
 
-        <label class="compte">Lastname</label>
+        <label class="compte">Nom :</label>
         <br />
-        <input name="lastname" type="text" placeholder="lastname">
+        <input name="lastname" type="text" placeholder="votre nom">
         </input>
-        <label class="compte">Firstname :</label>
+        <label class="compte">Prénom :</label>
         <br />
-        <input name="firstname" type="texte" placeholder="firstname">
+        <input name="firstname" type="texte" placeholder="votre prénom">
         </input>
-        <label class="compte">email :</label>
+        <label class="compte">Email :</label>
         <br />
-        <input name="email" type="texte" placeholder="email">
+        <input name="email" type="texte" placeholder="votre email">
         </input>
-        <label class="compte">Password :</label>
+        <label class="compte">Mot de passe :</label>
         <br />
-        <input name="password" type="password" placeholder="password">
+        <input name="password" type="password" placeholder="votre mot de passe">
         </input>
-        <button class="buttonSub"> valider </button>
+        <button class="buttonSub">valider</button>
     </form>
 
 
