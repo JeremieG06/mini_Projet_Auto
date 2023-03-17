@@ -57,7 +57,7 @@ class Voiture
   // Fonction FOR EACH pour listing des annonces:
   public function afficherAnnonces()
   {
-    $voiture = array($image, $prixDepart, $dateFin, $modele, $marque, $puissance, $annee, $description);
+    $voiture = array(['$image', '$prixDepart', '$dateFin', '$modele', '$marque', '$puissance', '$annee', '$description']);
     echo "<h2>Récapitulatif de l'annonce :</h2>";
     echo "<p>Image : {$this->image} </p>";
     echo "<p>Prix de départ : {$this->prixDepart} </p>";

@@ -27,20 +27,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $_POST["annee"],
         $_POST["description"]
     );
-
-    //Header vers le lien Annonces
-    header('Location: annonces.php');
+    // header('Location: http://localhost/Mini_Projet/mini_Projet_Auto/annonces.php');
 
     //Query pour ajout d'une annonce voiture - connexion avec la database
-    $query = $dbh->prepare("INSERT INTO ads (image, prixDepart, dateFin, modele, marque, puissance, annee, description) 
+    $query = $dbh->prepare("INSERT INTO `ads` (`image`, `prixDepart`, `dateFin`, `modele`,` marque`, `puissance`, `annee`, `description`) 
                             VALUES (:image, :prixDepart, :dateFin, :modele, :marque, :puissance, :annee, :description)");
-    $query->bindParam(":image", $_POST["image"]);
-    $query->bindParam(":prixDepart", $_POST["prixDepart"]);
-    $query->bindParam(":dateFin", $_POST["dateFin"]);
-    $query->bindParam(":modele", $_POST["modele"]);
-    $query->bindParam(":marque", $_POST["marque"]);
-    $query->bindParam(":puissance", $_POST["puissance"]);
-    $query->bindParam(":annee", $_POST["annee"]);
-    $query->bindParam(":description", $_POST["description"]);
-    // $query->execute();
+    $query->bindValue(":image", $_POST["image"]);
+    $query->bindValue(":prixDepart", $_POST["prixDepart"]);
+    $query->bindValue(":dateFin", $_POST["dateFin"]);
+    $query->bindValue(":modele", $_POST["modele"]);
+    $query->bindValue(":marque", $_POST["marque"]);
+    $query->bindValue(":puissance", $_POST["puissance"]);
+    $query->bindValue(":annee", $_POST["annee"]);
+    $query->bindValue(":description", $_POST["description"]);
+    $query->execute();
 }
