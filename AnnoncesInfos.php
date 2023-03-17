@@ -26,7 +26,12 @@ function afficher()
             </br>
             <li> Description : " . $data['description'] . "</li>
             </ul> </br>
-            <button id='Informations".$data['id']."'>Informations annonce </button>
             </br>";
+
+
+        echo '<form method="post" action="annonceDetails.php">';
+        echo '<input type="hidden" name="ad_id" value="' . $data['id'] . '">';
+        echo '<input type="submit" name="submit_bid" value="Informations">';
+        echo '</form>';
     }
 }
