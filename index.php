@@ -34,7 +34,7 @@
 
     <label class="instruc">image du véhicule :</label>
     <br />
-    <input name="image" type="file">
+    <input name="image" type="source">
     </input>
     <label class="instruc">Votre prix de départ :</label>
     <br />
@@ -58,7 +58,7 @@
     </input>
     <label class="instruc">Année de votre véhicule :</label>
     <br />
-    <input name="annee" type="texte">
+    <input name="annee" type="date">
     </input>
     <label class="instruc">Description de votre véhicule :</label>
     <br />
