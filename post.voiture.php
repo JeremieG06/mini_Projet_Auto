@@ -30,7 +30,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // header('Location: http://localhost/Mini_Projet/mini_Projet_Auto/annonces.php');
 
     //Query pour ajout d'une annonce voiture - connexion avec la database
-    $query = $dbh->prepare("INSERT INTO `ads` (`image`, `prixDepart`, `dateFin`, `modele`,` marque`, `puissance`, `annee`, `description`) 
+    $query = $dbh->prepare("INSERT INTO `ads` (`image`, `starting_price`, `closing_date`, `car_model`,`car_brand`, `engine_power`, `car_year`, `description`) 
                             VALUES (:image, :prixDepart, :dateFin, :modele, :marque, :puissance, :annee, :description)");
     $query->bindValue(":image", $_POST["image"]);
     $query->bindValue(":prixDepart", $_POST["prixDepart"]);
