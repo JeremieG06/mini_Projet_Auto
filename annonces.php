@@ -1,5 +1,5 @@
 <?php
-// require_once(__DIR__ . '/post.voiture.php');
+require_once(__DIR__ . '/AnnoncesInfos.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -31,7 +31,7 @@
     </nav>
 
     <h3>Consulter les annonces</h3>
-
+    <?php afficher() ?>
 
 </body>
 

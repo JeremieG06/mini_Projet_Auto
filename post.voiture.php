@@ -40,11 +40,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $query->bindValue(":annee", $_POST["annee"]);
     $query->bindValue(":description", $_POST["description"]);
     $query->execute();
-
-    //RECUPERER les annonces depuis la DB pour affichage FOR EACH
-    $dbh = new PDO("mysql:dbname=mini_projet_auto_enchere;host=127.0.0.1", "root", "");
-    $query = $dbh->prepare('SELECT * FROM ads');
-    $query->execute(); // Execution de la requête préparée
-    $results = $query->fetchAll(); // Récupération des datas
-    var_dump($results);
 }
