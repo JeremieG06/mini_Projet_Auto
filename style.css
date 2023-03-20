@@ -102,4 +102,7 @@ font-family: 'Helvetica', 'Arial Narrow', Arial, sans-serif;
       float: right;
     }
  
- 
+ a.deconnexion {
+  float: right;
+
+ }
