@@ -1,6 +1,5 @@
 <?php
 require_once(__DIR__ . './post.login.users.php');
-
 ?>
 <!DOCTYPE html>
 <html>
@@ -33,31 +32,33 @@ require_once(__DIR__ . './post.login.users.php');
     </div>
   </nav>
 
-  <?php if (!isset($loggedUser)): ?>
-  <form action="connexion.users.php" method="POST">
-        <?php if(isset($errorMessage)) : ?>
-            <div class= "alert alert-danger" role="alert">
-                <?php echo $errorMessage; ?>
-            </div>
-            <?php endif; ?>
-        <h2>Connexion</h2>
+  <?php if (!isset($loggedUser)) : ?>
+    <form action="connexion.users.php" method="POST">
+      <?php if (isset($errorMessage)) : ?>
+        <div class="alert alert-danger" role="alert">
+          <?php echo $errorMessage; ?>
+        </div>
+      <?php endif; ?>
+      <h2>Connexion</h2>
 
-        </input>
-        <label class="compte">Email :</label>
-        <br />
-        <input name="email" type="texte" placeholder="votre email">
-        </input>
-        <label class="compte">Mot de passe :</label>
-        <br />
-        <input name="password" type="password" placeholder="votre mot de passe">
-        </input>
-        <button class="buttonSub">valider</button>
+      </input>
+      <label class="compte">Email :</label>
+      <br />
+      <input name="email" type="texte" placeholder="votre email">
+      </input>
+      <label class="compte">Mot de passe :</label>
+      <br />
+      <input name="password" type="password" placeholder="votre mot de passe">
+      </input>
+      <button class="buttonSub">valider </button>
+
     </form>
-    <?php else: ?>
+  <?php else : ?>
     <div class="alert alert-success" role="alert">
-        Bonjour <?php echo $loggedUser['email']; ?> et bienvenue sur le site !
+      Bonjour <?php echo $loggedUser['email']; ?> et bienvenue sur le site !
     </div>
-<?php endif; ?>
+  <?php endif; ?>
 
 </body>
+
 </html>
