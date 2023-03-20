@@ -8,9 +8,9 @@ function LogIn($email, $password)
     session_start();
 
     // Vérifier si l'utilisateur est déjà connecté
-    if(isset($_SESSION["users"])) {
+    if (isset($_SESSION["users"])) {
         // Rediriger vers la page d'accueil
-        header("Location: annonces.php");
+        header("Location: index.php");
         exit;
     }
 
@@ -21,16 +21,16 @@ function LogIn($email, $password)
         $query->execute(array(':email' => $email, ':password' => $password));
         $results = $query->fetch(); // Récupération des données
 
-        if($results) {
+        if ($results) {
             // Stocker les données de l'utilisateur dans la session
             $_SESSION["users"] = $results;
-
             // Rediriger vers la page d'accueil
             header("Location: annonces.php");
+            echo "Welcome !";
             exit;
         } else {
             // Afficher un message d'erreur
-            $error = "Nom d'utilisateur ou mot de passe incorrect.";
+            echo "Nom d'utilisateur ou mot de passe incorrect !";
         }
     } catch (PDOException $e) {
         print "Error!: " . $e->getMessage() . "<br/>";
@@ -39,7 +39,7 @@ function LogIn($email, $password)
 }
 
 // Vérifier si le formulaire de connexion a été soumis
-if($_SERVER["REQUEST_METHOD"] == "POST") {
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Récupérer les données de formulaire
     $email = $_POST["email"];
     $password = $_POST["password"];

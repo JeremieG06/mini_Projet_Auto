@@ -1,8 +1,6 @@
 <?php
-session_start ();
-unset($_SESSION['users']);
-header("location.index.php")
-
-
-
-?>
+session_start();
+session_unset();
+session_destroy();
+header("location: connexion.php");
+echo "Vous êtes déconnecté(e) ! :-/";

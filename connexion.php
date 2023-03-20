@@ -33,7 +33,7 @@ require_once(__DIR__ . './post.login.users.php');
   </nav>
 
   <?php if (!isset($loggedUser)) : ?>
-    <form action="annonces.php" method="POST">
+    <form action="connexion.php" method="POST">
       <?php if (isset($errorMessage)) : ?>
         <div class="alert alert-danger" role="alert">
           <?php echo $errorMessage; ?>
