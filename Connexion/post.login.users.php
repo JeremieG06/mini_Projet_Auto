@@ -47,3 +47,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Appeler la fonction LogIn avec les données de connexion
     LogIn($email, $password);
 }
+
