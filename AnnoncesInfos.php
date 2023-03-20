@@ -1,3 +1,4 @@
+
 <?php
 function afficher()
 {
@@ -28,9 +29,13 @@ function afficher()
             </ul> </br>
             </br>";
 
-        echo '<form method="post" action="annonceDetails.php">';
+        echo '<form method="GET" action="annonceDetails.php">';
         echo '<input type="hidden" name="ad_id" value="' . $data['id'] . '">';
         echo '<input type="submit" name="submit_bid" value="Informations">';
         echo '</form>';
+
+        
+               
     }
 }
+
