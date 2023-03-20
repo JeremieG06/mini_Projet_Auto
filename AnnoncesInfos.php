@@ -12,7 +12,7 @@ function afficher()
         echo "<ul>
         <li> Image : " . $data['image'] . "</li>
         </br>
-            <li> Prix de départ : " . $data['starting_price'] . "</li>
+            <li>Prix de départ : " . $data['starting_price'] . "</li>
             </br>
             <li> Date de fin d'enchère :" . $data['closing_date'] . "</li>
             </br>
@@ -24,7 +24,8 @@ function afficher()
             </br>
             <li> Année du véhicule :" . $data['car_year'] . "</li>
             </br>
-            <li> Description : " . $data['description'] . "</li>
+            <li>  Description : " . $data['description'] . "</li>
             </ul> </br>";
     }
 }
+

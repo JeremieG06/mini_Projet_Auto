@@ -86,6 +86,12 @@ font-family: 'Helvetica', 'Arial Narrow', Arial, sans-serif;
 
     }
 
-   
+  img.marteau{
+    height: 147px;
+    float: left;
+    margin-top: 21px;
+    overflow: auto;
+    margin-left: 0px;
+  }
  
  

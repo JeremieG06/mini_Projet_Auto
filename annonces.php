@@ -27,12 +27,15 @@ require_once(__DIR__ . '/AnnoncesInfos.php');
             <a class="active" href="index.php"><i class="fa-solid fa-house-chimney"></i></a>
             <a href="annonces.php">Annonces</a>
             <a class="compte" href="compte.php">Mon Compte</a>
-        </div>
+            </div>
     </nav>
-
+    <div class="annonces">
+    <img src = " ./Images/enchere.jpg" alt="description"   class="marteau">
+</img>
+</div>
+        <h2>Annonces</h2>
     <h3>Consulter les annonces</h3>
-    <?php afficher() ?>
-
+   <?php afficher() ?>
 </body>
 
 </html>
