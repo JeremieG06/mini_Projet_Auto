@@ -1,108 +1,116 @@
-
 body {
-    margin: 0;
+  margin: 0;
 font-family: 'Helvetica', 'Arial Narrow', Arial, sans-serif;
-  }
+}
 .topnav {
-    background-color: #137b23;
-    overflow: hidden;
-  }
-  
-
-  /* Style the links inside the navigation bar */
-  .topnav a {
-    float: left;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-  }
-  
-  /* Change the color of links on hover */
-  .topnav a:hover {
-    background-color: orangered;
-    color: black;
-  }
-  
-  /* Add a color to the active/current link */
-  .topnav a.active {
-    background-color: #1cb04d;
-    color: white;
-  }
-
-  a.compte {
-    float: right;
-  }
-
-  h1{
-    color:orangered;
-    text-align: center;
-    font-size: 40px;
-   
-  }
-
-  header{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-
-  }
-
-  h2{
-    text-align:center;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #FF4500;
-    font-size: 70px;
-    }
-    input{
-            margin-bottom: 45px;
-            
-            border-color: #137b23;
-            width:500px;
-            padding:5px;
-    }
-
-    form{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-      }
-
-    .buttonSub{
-            margin-bottom: 45px;
-            color:white;
-            background-color:#137b23;
-            width:150px;
-    }
-
-    label.instruc{
-        display: flex;
-        float: right;
-        font-size: small;
-        font-weight: bold;
-    
+  background-color: #137b23;
+  overflow: hidden;
+}
 
 
-    }
+/* Style the links inside the navigation bar / */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
 
-  img.marteau{
-    height: 148px;
-    float: left;
-    margin-top: 21px;
-    overflow: auto;
-    margin-left: 0px;
-  }
+/* / Change the color of links on hover / */
+.topnav a:hover {
+  background-color: orangered;
+  color: black;
+}
 
-  ul{
-    list-style-type:none;
-    }
+/* / Add a color to the active/current link */
+.topnav a.active {
+  background-color: #1cb04d;
+  color: white;
+}
 
-    a.connexion {
-      float: right;
-    }
- 
- a.deconnexion {
+a.compte {
   float: right;
+}
 
- }
+h1{
+  color:orangered;
+  text-align: center;
+  font-size: 40px;
+
+}
+
+header{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+}
+
+h2{
+  text-align:center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #FF4500;
+  font-size: 70px;
+  }
+  input{
+          margin-bottom: 45px;
+
+          border-color: #137b23;
+          width:500px;
+          padding:5px;
+  }
+
+  form{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+  .buttonSub{
+          margin-bottom: 45px;
+          color:white;
+          background-color:#137b23;
+          width:150px;
+  }
+
+  label.instruc{
+      display: flex;
+      float: right;
+      font-size: small;
+      font-weight: bold;
+  }
+
+img.marteau{
+  height: 147px;
+  float: left;
+  margin-top: 21px;
+  overflow: auto;
+  margin-left: 0px;
+}
+
+.prix{
+height:15px;
+color:green;
+}
+.moteur{
+height:15px;
+}
+.information{
+margin-bottom: 45px;
+color:white;
+background-color:#137b23;
+width:150px;
+}
+
+.mot
+{
+font-weight:bold;
+display:block;
+line-height: 277%;
+}
+
+
+
+

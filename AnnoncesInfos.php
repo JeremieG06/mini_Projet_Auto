@@ -12,26 +12,24 @@ function afficher()
     foreach ($results as $data) {
         echo "<ul>
         <li> <img src = " . $data['image'] . "/></li>
-        </br>
-            <li>Prix de départ : " . $data['starting_price'] . "</li>
+        <li class='mot'><img src='./Images/telechargement.png' class='prix' /></img> Prix de départ :". $data['starting_price'] ."</li> 
             </br>
-            <li> Date de fin d'enchère :" . $data['closing_date'] . "</li>
+            <li class='mot'><i class='fa-solid fa-calendar-days'></i> Date de fin d'enchère :" . $data['closing_date'] . "</li>
             </br>
-            <li> Modèle de voiture : " . $data['car_model'] . "</li>
+            <li class='mot'><i class='fa-sharp fa-solid fa-car'></i> Modèle de voiture : " . $data['car_model'] . "</li>
             </br>
-            <li> Marque de la voitrue : " . $data['car_brand'] . "</li>
+            <li class='mot'><i class='fa-sharp fa-solid fa-car'></i> Marque de la voitrue : " . $data['car_brand'] . "</li>
             </br>
-            <li> Puissance du moteur :" . $data['engine_power'] . "</li>
+            <li class='mot'><img src='./Images/engine.png' class='moteur'/></img> Puissance du moteur :" . $data['engine_power'] . "</li>
             </br>
-            <li> Année du véhicule :" . $data['car_year'] . "</li>
+            <li class='mot'><i class='fa-solid fa-calendar-days'></i> Année du véhicule :" . $data['car_year'] . "</li>
             </br>
-            <li>  Description : " . $data['description'] . "</li>
+            <li class='Description' >  Description : " . $data['description'] . "</li>
             </ul> </br>";
-
 
             echo '<form method="GET" action="annonceDetails.php">';
         echo '<input type="hidden" name="ad_id" value="' . $data['id'] . '">';
-        echo '<input type="submit" name="submit_bid" value="Informations">';
+        echo '<input class="information" type="submit" name="submit_bid" value="Informations" >';
         echo '</form>';
     }
 }
