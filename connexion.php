@@ -37,7 +37,6 @@ require_once(__DIR__ . './post.login.users.php');
 
     <h2>Connexion</h2>
 
-    </input>
     <label class="compte">Email :</label>
     <br />
     <input name="email" type="texte" placeholder="votre email">

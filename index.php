@@ -38,7 +38,7 @@
     <br />
     <input name="image" type="source">
     </input>
-    <i class="fa-solid fa-calendar-week"></i><label class="instruc">Votre prix de départ :</label>
+    <label class="instruc">Votre prix de départ :</label>
     <br />
     <input name="prixDepart" type="texte">
     </input>
