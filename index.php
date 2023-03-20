@@ -26,7 +26,7 @@
       <a href="annonces.php">Annonces</a>
       <a class="compte" href="compte.php">Mon Compte</a>
       <a class="connexion" href="connexion.php">Connexion</a>
-      <a class="deconnexion" href="logout.php">Déconnexion</a>
+      <a class="deconnexion" href="logout.php">Deconnexion</a>
     </div>
   </nav>
 
