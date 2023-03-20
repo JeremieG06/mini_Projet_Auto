@@ -16,6 +16,7 @@ function LogIn($email, $password)
         $query->bindValue(":password", $password);
         $results = $query->fetch(); // Récupération des datas
         var_dump($results);
+
         // {
         //     if (!empty($_POST['email']) && !empty($_POST['password'])) { {
         //             if (
