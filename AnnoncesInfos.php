@@ -10,9 +10,9 @@ function afficher()
     // var_dump($results);
     //Fonction FOR EACH avec ECHO pour affichage sur la page Annonces
     foreach ($results as $data) {
-        echo "<ul>
+        echo "<ul class='listing'>
         <li> <img src = " . $data['image'] . "/></li>
-        <li class='mot'><img src='./Images/telechargement.png' class='prix' /></img> Prix de départ :". $data['starting_price'] ."</li> 
+        <li class='mot'><img src='./Images/telechargement.png' class='prix' /></img> Prix de départ :" . $data['starting_price'] . "</li> 
             </br>
             <li class='mot'><i class='fa-solid fa-calendar-days'></i> Date de fin d'enchère :" . $data['closing_date'] . "</li>
             </br>
@@ -27,10 +27,9 @@ function afficher()
             <li class='Description' >  Description : " . $data['description'] . "</li>
             </ul> </br>";
 
-            echo '<form method="GET" action="annonceDetails.php">';
+        echo '<form method="GET" action="annonceDetails.php">';
         echo '<input type="hidden" name="ad_id" value="' . $data['id'] . '">';
         echo '<input class="information" type="submit" name="submit_bid" value="Informations" >';
         echo '</form>';
     }
 }
-
