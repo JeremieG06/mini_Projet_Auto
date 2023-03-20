@@ -13,7 +13,7 @@ function afficher()
         echo "<ul>
         <li> Image : " . $data['image'] . "</li>
         </br>
-            <li> Prix de départ : " . $data['starting_price'] . "</li>
+            <li>Prix de départ : " . $data['starting_price'] . "</li>
             </br>
             <li> Date de fin d'enchère :" . $data['closing_date'] . "</li>
             </br>
@@ -25,17 +25,8 @@ function afficher()
             </br>
             <li> Année du véhicule :" . $data['car_year'] . "</li>
             </br>
-            <li> Description : " . $data['description'] . "</li>
-            </ul> </br>
-            </br>";
-
-        echo '<form method="GET" action="annonceDetails.php">';
-        echo '<input type="hidden" name="ad_id" value="' . $data['id'] . '">';
-        echo '<input type="submit" name="submit_bid" value="Informations">';
-        echo '</form>';
-
-        
-               
+            <li>  Description : " . $data['description'] . "</li>
+            </ul> </br>";
     }
 }
 
