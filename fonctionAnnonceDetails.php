@@ -26,6 +26,7 @@ function afficherAnnonceDetail($id)
             <li> Année du véhicule : " . $annonce['car_year'] . "</li>
             <br>
             <li> Description : " . $annonce['description'] . "</li>
+            <br/>
             </ul> <br><br>";
 
         echo '<form method="post" action="annonceDetails.php">';
