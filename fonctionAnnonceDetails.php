@@ -11,7 +11,7 @@ function afficherAnnonceDetail($id)
     
     foreach ($result as $annonce) { // boucle pour afficher chaque annonce
         echo "<ul>
-            <li> Image : " . $annonce['image'] . "</li>
+            <li> " . $annonce['image'] . "</li>
             <br>
             <li> Prix de départ : " . $annonce['starting_price'] . "</li>
             <br>
@@ -32,6 +32,7 @@ function afficherAnnonceDetail($id)
         echo '<form method="post" action="annonceDetails.php">';
         echo '<input type="hidden" name="ad_id" value="' . $annonce['id'] . '">';
         echo '</form>';
+        
     }
 
 }

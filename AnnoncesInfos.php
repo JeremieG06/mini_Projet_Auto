@@ -11,7 +11,7 @@ function afficher()
     //Fonction FOR EACH avec ECHO pour affichage sur la page Annonces
     foreach ($results as $data) {
         echo "<ul>
-        <li> Image : " . $data['image'] . "</li>
+        <li> <img src = " . $data['image'] . "/></li>
         </br>
             <li>Prix de départ : " . $data['starting_price'] . "</li>
             </br>
