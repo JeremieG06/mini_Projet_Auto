@@ -8,10 +8,10 @@ function Auctions($starting_price) //UPDATE pour enchères
     // 1 - Vérifier si l'utilisateur est déjà connecté
     session_start();
     if (isset($_SESSION["users"])) {
-        echo "Vous pouvez enchérir !";
+        echo "Vous êtes bien connecté(e), vous pouvez enchérir !";
     } else {
         // Afficher un message d'erreur
-        echo "Impossible d'enchérir, vous n'êtes pas connecté(e) !";
+        echo "Impossible d'enchérir, le prix n'est pas disponible !";
         return; // Fin
     }
 
@@ -27,7 +27,7 @@ function Auctions($starting_price) //UPDATE pour enchères
             // 3- Création de l'INPUT pour enchère (new_price sur DB dans auctions)
             echo "<li>Votre enchère : <input type='number' name='new_price' value='" . $starting_price['starting_price'] . "'></input></li>
             <br>
-            <button>Enchérir</button>
+            <button type='submit'>Enchérir</button>
             <br>";
         } else {
             // Afficher un message d'erreur
