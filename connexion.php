@@ -37,17 +37,23 @@ require_once(__DIR__ . './post.login.users.php');
 
     <h2>Connexion</h2>
 
-    <label class="compte">Email :</label>
+    <label class="instruc">Email :</label>
     <br />
-    <input name="email" type="texte" placeholder="votre email">
+    <input name="email" type="texte">
     </input>
-    <label class="compte">Mot de passe :</label>
+    <label class="instruc">Mot de passe :</label>
     <br />
-    <input name="password" type="password" placeholder="votre mot de passe">
+    <input name="password" type="password" >
     </input>
     <button class="buttonSub">valider </button>
 
   </form>
+
+  <footer>
+		
+  <p class="mot"> 2023 Mini-Projet Enchères Automobiles, le Bocal Academy  </p>
+      <p>Créé avec passion par notre groupe.</p>
+	</footer>
 </body>
 
 </html>

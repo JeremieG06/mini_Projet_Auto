@@ -39,6 +39,11 @@ require_once(__DIR__ . '/AnnoncesInfos.php');
     <h2>Annonces</h2>
     </div>
     <?php afficher() ?>
+
+    <footer>
+    <p class="mot"> 2023 Mini-Projet Enchères Automobiles, le Bocal Academy  </p>
+      <p>Créé avec passion par notre groupe.</p>
+	</footer>
 </body>
 
 </html>

@@ -41,6 +41,11 @@ if ($id !== null) {
 }
 ?>
 
+<footer>
+<p class="mot"> 2023 Mini-Projet Enchères Automobiles, le Bocal Academy  </p>
+      <p>Créé avec passion par notre groupe.</p>
+	</footer>
+
 </body>
 
 </html>
