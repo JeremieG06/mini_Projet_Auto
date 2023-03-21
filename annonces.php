@@ -27,7 +27,7 @@ require_once(__DIR__ . '/AnnoncesInfos.php');
             <a class="active" href="index.php"><i class="fa-solid fa-house-chimney"></i></a>
 
             <a href="annonces.php">Annonces</a>
-            <a class="compte" href="compte.php">Mon Compte</a>
+            <a class="compte" href="compte.php">Inscription</a>
             <a class="deconnexion" href="logout.php">Déconnexion</a>
             <a class="connexion" href="connexion.php">Connexion</a>
         </div>
