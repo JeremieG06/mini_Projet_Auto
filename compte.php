@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/d4ade387aa.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
     <title>Mon compte</title>
 </head>
 
@@ -27,24 +28,24 @@
         </div>
     </nav>
     <form action="post.users.php" method="POST">
-        <link rel="stylesheet" href="style.css">
+        
         <h2>Créer un compte</h2>
 
-        <label class="compte">Nom :</label>
+        <label class="instruc">Entrez votre nom :</label>
         <br />
-        <input name="lastname" type="text" placeholder="votre nom">
+        <input name="lastname" type="text">
         </input>
-        <label class="compte">Prénom :</label>
+        <label class="instruc"> Entrez votre prénom :</label>
         <br />
-        <input name="firstname" type="texte" placeholder="votre prénom">
+        <input name="firstname" type="texte">
         </input>
-        <label class="compte">Email :</label>
+        <label class="instruc">Entrez votre email :</label>
         <br />
-        <input name="email" type="texte" placeholder="votre email">
+        <input name="email" type="texte">
         </input>
-        <label class="compte">Mot de passe :</label>
+        <label class="instruc"> Entrez votre Mot de passe :</label>
         <br />
-        <input name="password" type="password" placeholder="votre mot de passe">
+        <input name="password" type="password">
         </input>
         <button class="buttonSub">valider</button>
     </form>
