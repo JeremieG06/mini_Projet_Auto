@@ -10,22 +10,22 @@ function afficherAnnonceDetail($id)
     $result = $query->fetchAll(); // récupère les résultats de la requête
     
     foreach ($result as $annonce) { // boucle pour afficher chaque annonce
-        echo "<ul>
+        echo "<ul class='listing' >
             <li> " . $annonce['image'] . "</li>
             <br>
-            <li> Prix de départ : " . $annonce['starting_price'] . "</li>
+            <li class='mot'> <img src='./Images/telechargement.png' class='prix' /> Prix de départ : " . $annonce['starting_price'] . "</li>
             <br>
-            <li> Date de fin d'enchère : " . $annonce['closing_date'] . "</li>
+            <li class='mot'> <i class='fa-solid fa-calendar-days'></i> Date de fin d'enchère : " . $annonce['closing_date'] . "</li>
             <br>
-            <li> Modèle de voiture : " . $annonce['car_model'] . "</li>
+            <li class='mot'> <i class='fa-sharp fa-solid fa-car'></i> Modèle de voiture : " . $annonce['car_model'] . "</li>
             <br>
-            <li> Marque de la voiture : " . $annonce['car_brand'] . "</li>
+            <li class='mot'> <i class='fa-sharp fa-solid fa-car'></i> Marque de la voiture : " . $annonce['car_brand'] . "</li>
             <br>
-            <li> Puissance du moteur : " . $annonce['engine_power'] . "</li>
+            <li class='mot'> <img src='./Images/engine.png' class='moteur'/></img> Puissance du moteur : " . $annonce['engine_power'] . "</li>
             <br>
-            <li> Année du véhicule : " . $annonce['car_year'] . "</li>
+            <li class='mot'> <i class='fa-solid fa-calendar-days'></i> Année du véhicule : " . $annonce['car_year'] . "</li>
             <br>
-            <li> Description : " . $annonce['description'] . "</li>
+            <li class='mot'> Description : " . $annonce['description'] . "</li>
             <br/>
             </ul> <br><br>";
 
