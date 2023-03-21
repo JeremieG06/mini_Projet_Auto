@@ -28,7 +28,6 @@ require_once(__DIR__ . './post.login.users.php');
       <a class="active" href="index.php"><i class="fa-solid fa-house-chimney"></i></a>
       <a href="annonces.php">Annonces</a>
       <a class="compte" href="compte.php">Mon Compte</a>
-      <a class="connexion" href="connexion.php">Connexion</a>
     </div>
   </nav>
   <div class="background"></div>
@@ -44,17 +43,17 @@ require_once(__DIR__ . './post.login.users.php');
     </input>
     <label class="instruc">Mot de passe :</label>
     <br />
-    <input name="password" type="password" >
+    <input name="password" type="password">
     </input>
     <button class="buttonSub">valider </button>
 
   </form>
 
   <footer>
-		
-  <p class="mot"> 2023 Mini-Projet Enchères Automobiles, le Bocal Academy  </p>
-      <p>Créé avec passion par notre groupe.</p>
-	</footer>
+
+    <p class="mot"> 2023 Mini-Projet Enchères Automobiles, le Bocal Academy </p>
+    <p>Créé avec passion par notre groupe.</p>
+  </footer>
 </body>
 
 </html>

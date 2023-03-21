@@ -28,7 +28,7 @@
             <a class="compte" href="compte.php">Mon Compte</a>
         </div>
     </nav>
-  
+
     <div class="background"></div>
 
 
@@ -42,13 +42,13 @@
     } else {
         echo "L'identifiant de l'annonce n'a pas été spécifié.";
     }
-    Auctions($auctions);
+    Auctions($starting_price);
     ?>
 
-<footer>
-<p class="mot"> 2023 Mini-Projet Enchères Automobiles, le Bocal Academy  </p>
-      <p>Créé avec passion par notre groupe.</p>
-	</footer>
+    <footer>
+        <p class="mot"> 2023 Mini-Projet Enchères Automobiles, le Bocal Academy </p>
+        <p>Créé avec passion par notre groupe.</p>
+    </footer>
 
 </body>
 

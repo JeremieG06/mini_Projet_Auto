@@ -20,7 +20,7 @@ function Auctions($starting_price) //UPDATE pour enchères
         $dbh = new PDO("mysql:dbname=mini_projet_auto_enchere;host=127.0.0.1", "root", "");
         $query = $dbh->prepare('SELECT * FROM ads WHERE starting_price = :starting_price ');
         $query->execute(array(':starting_price' => $starting_price));
-        $starting_price = $query->fetch(PDO::FETCH_ASSOC);
+        $starting_price = $query->fetch();
         var_dump($starting_price);
 
         if ($starting_price) {
@@ -38,7 +38,7 @@ function Auctions($starting_price) //UPDATE pour enchères
         die();
     }
 
-    // 3 - POST de l'input enchère
+    // 3 - POST de l'INPUT selon le name 'new_price'
     if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["new_price"])) {
         // Récupérer les données de formulaire
         $new_price = $_POST["new_price"];
