@@ -159,3 +159,10 @@ footer p {
   display: block;
   line-height: 277%;
 }
+
+.background {
+  background-image: url("./Images/cover.jpg");
+  background-size: cover;
+  height: 100vh;
+  margin-top: 1px;
+}

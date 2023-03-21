@@ -31,6 +31,7 @@ require_once(__DIR__ . './post.login.users.php');
       <a class="connexion" href="connexion.php">Connexion</a>
     </div>
   </nav>
+  <div class="background"></div>
 
 
   <form action="connexion.php" method="POST">

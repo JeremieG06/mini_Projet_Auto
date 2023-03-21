@@ -32,6 +32,7 @@ require_once(__DIR__ . '/AnnoncesInfos.php');
             
         </div>
     </nav>
+    <div class="background"></div>
    
         
 <div class="annoncesTitle">

@@ -27,6 +27,7 @@
             <a class="compte" href="compte.php">Mon Compte</a>
         </div>
     </nav>
+    <div class="background"></div>
     <form action="post.users.php" method="POST">
         
         <h2>Créer un compte</h2>

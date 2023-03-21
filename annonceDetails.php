@@ -27,6 +27,8 @@
             <a class="compte" href="compte.php">Mon Compte</a>
         </div>
     </nav>
+  
+    <div class="background"></div>
 
 
 

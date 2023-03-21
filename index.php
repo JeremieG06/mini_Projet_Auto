@@ -29,6 +29,7 @@
       <a class="deconnexion" href="logout.php">Deconnexion</a>
     </div>
   </nav>
+  <div class="background"></div>
 
   <form action="post.voiture.php" method="POST">
 
