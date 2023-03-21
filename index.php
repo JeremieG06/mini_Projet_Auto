@@ -29,6 +29,7 @@
       <a class="deconnexion" href="logout.php">Deconnexion</a>
     </div>
   </nav>
+  <div class="background"></div>
 
   <form action="post.voiture.php" method="POST">
 
@@ -70,8 +71,9 @@
   </form>
 
   <footer>
-
-  </footer>
+		<p class="mot"> 2023 Mini-Projet Enchères Automobiles, le Bocal Academy  </p>
+      <p>Créé avec passion par notre groupe.</p>
+	</footer>
 
 </body>
 

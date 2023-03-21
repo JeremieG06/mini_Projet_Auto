@@ -12,7 +12,7 @@ function afficher()
     foreach ($results as $data) {
         echo "<ul class='listing'>
         <li> <img src = " . $data['image'] . "/></li>
-        <li class='mot'><img src='./Images/telechargement.png' class='prix' /></img> Prix de départ :" . $data['starting_price'] . "</li> 
+        <li class='mot'><img src='./Images/telechargement.png' class='prix' /></img> Prix de départ :" . $data['starting_price']. "</li> 
             </br>
             <li class='mot'><i class='fa-solid fa-calendar-days'></i> Date de fin d'enchère :" . $data['closing_date'] . "</li>
             </br>

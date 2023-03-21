@@ -116,7 +116,8 @@ img.marteau {
   text-align: center;
   width: 50%;
   margin: auto;
-  box-shadow: 4px 6px 6px 4px orangered;
+  box-shadow: 2px 4px 4px 2px orangered;
+  margin-top: 56px;
 }
 
 li{
@@ -139,4 +140,29 @@ a.deconnexion{
 
 a.connexion {
   float: right;
+}
+
+footer {
+  background-color: #137b23;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+footer p {
+  font-size: 14px;
+  margin: 0;
+}
+
+.mot {
+  font-weight: bold;
+  display: block;
+  line-height: 277%;
+}
+
+.background {
+  background-image: url("./Images/cover.jpg");
+  background-size: cover;
+  height: 100vh;
+  margin-top: 1px;
 }

@@ -28,6 +28,8 @@
             <a class="compte" href="compte.php">Mon Compte</a>
         </div>
     </nav>
+  
+    <div class="background"></div>
 
 
 
@@ -42,6 +44,11 @@
     }
     Auctions($auctions);
     ?>
+
+<footer>
+<p class="mot"> 2023 Mini-Projet Enchères Automobiles, le Bocal Academy  </p>
+      <p>Créé avec passion par notre groupe.</p>
+	</footer>
 
 </body>
 
