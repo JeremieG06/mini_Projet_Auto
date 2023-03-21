@@ -25,7 +25,7 @@ body {
 
 /* / Add a color to the active/current link */
 .topnav a.active {
-  background-color: #1cb04d;
+  background-color: #137b23;
   color: white;
 }
 
@@ -48,7 +48,7 @@ header {
 h2 {
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
-  color: #ff4500;
+  color: orangered;
   font-size: 70px;
 }
 input {
@@ -72,6 +72,8 @@ form {
   width: 150px;
 }
 
+
+
 label.instruc {
   display: flex;
   float: right;
@@ -88,7 +90,7 @@ img.marteau {
 
 .prix {
   height: 15px;
-  color: green;
+  color: #137b23;
 }
 .moteur {
   height: 15px;
@@ -107,12 +109,14 @@ img.marteau {
 }
 
 .listing {
-  border: solid #137b23 2px;
+  
+  border: solid #137b23 4px;
   border-radius: 5%;
   padding: 1%;
   text-align: center;
   width: 50%;
   margin: auto;
+  box-shadow: 4px 6px 6px 4px orangered;
 }
 
 li{
