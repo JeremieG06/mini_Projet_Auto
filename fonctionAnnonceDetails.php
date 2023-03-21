@@ -8,12 +8,12 @@ function afficherAnnonceDetail($id)
     $query->bindValue(":id", $id);
     $query->execute();
     $result = $query->fetchAll(); // récupère les résultats de la requête
-    
+
     foreach ($result as $annonce) { // boucle pour afficher chaque annonce
         echo "<ul>
             <li> " . $annonce['image'] . "</li>
             <br>
-            <li> Prix de départ : " . $annonce['starting_price'] . "</li>
+            <li> Prix de départ : " . $annonce['starting_price'] . " €</li>
             <br>
             <li> Date de fin d'enchère : " . $annonce['closing_date'] . "</li>
             <br>
@@ -26,15 +26,13 @@ function afficherAnnonceDetail($id)
             <li> Année du véhicule : " . $annonce['car_year'] . "</li>
             <br>
             <li> Description : " . $annonce['description'] . "</li>
-            <br/>
+            <br>
             </ul> <br><br>";
 
         echo '<form method="post" action="annonceDetails.php">';
         echo '<input type="hidden" name="ad_id" value="' . $annonce['id'] . '">';
         echo '</form>';
-        
     }
-
 }
- 
+
 ?>
