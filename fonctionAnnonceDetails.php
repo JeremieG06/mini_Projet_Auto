@@ -12,9 +12,9 @@ function afficherAnnonceDetail($id)
     foreach ($result as $annonce) { // boucle pour afficher chaque annonce
         echo "<ul class='listing' >
            
-            <li class='mot'> <img src='./Images/telechargement.png' class='prix' /> Prix de départ : " . $annonce['starting_price'] . "</li>
+            <li class='mot'> <img src='./Images/telechargement.png' class='prix' /> Prix de départ : " . $annonce['starting_price'] . " €</li>
             <br>
-            <li class='mot'> <i class='fa-solid fa-calendar-days'></i> Date de fin d'enchère : " . $annonce['closing_date'] . " €</li>
+            <li class='mot'> <i class='fa-solid fa-calendar-days'></i> Date de fin d'enchère : " . $annonce['closing_date'] . " </li>
             <br>
             <li class='mot'> <i class='fa-sharp fa-solid fa-car'></i> Modèle de voiture : " . $annonce['car_model'] . "</li>
             <br>

@@ -35,6 +35,7 @@
 
     <?php
     require_once(__DIR__ . '/fonctionAnnonceDetails.php');
+    $starting_price = null;
 
     $id = isset($_GET['ad_id']) ? $_GET['ad_id'] : null;
     if ($id !== null) {
@@ -46,7 +47,7 @@
     ?>
 
     <footer>
-        <p class="mot"> 2023 Mini-Projet Enchères Automobiles, le Bocal Academy </p>
+        <p class="mot"> 2023 Mini-Projet Enchères Automobiles, le Bocal Academy. </p>
         <p>Créé avec passion par notre groupe.</p>
     </footer>
 

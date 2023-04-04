@@ -11,7 +11,7 @@ function Auctions($starting_price) //UPDATE pour enchères
         echo "Vous êtes bien connecté(e), vous pouvez enchérir !";
     } else {
         // Afficher un message d'erreur
-        echo "Impossible d'enchérir, le prix n'est pas disponible !";
+        echo "Impossible d'enchérir, vous n'êtes pas connecté(e) !";
         return; // Fin
     }
 
@@ -21,18 +21,13 @@ function Auctions($starting_price) //UPDATE pour enchères
         $query = $dbh->prepare('SELECT * FROM ads WHERE starting_price = :starting_price ');
         $query->execute(array(':starting_price' => $starting_price));
         $starting_price = $query->fetch();
-        var_dump($starting_price);
+        // var_dump($starting_price);
 
-        if ($starting_price) {
-            // 3- Création de l'INPUT pour enchère (new_price sur DB dans auctions)
-            echo "<li>Votre enchère : <input type='number' name='new_price' value='" . $starting_price['starting_price'] . "'></input></li>
+        // 3- Création de l'INPUT pour enchère (new_price sur DB dans auctions)
+        echo "<div><li>Votre enchère : <input type='number' name='new_price' ></input></li>
             <br>
             <button type='submit'>Enchérir</button>
-            <br>";
-        } else {
-            // Afficher un message d'erreur
-            echo "Impossible d'enchérir, l'annonce n'existe pas !";
-        }
+            <br></div>";
     } catch (PDOException $e) {
         print "Error!: " . $e->getMessage() . "<br/>";
         die();
@@ -51,7 +46,7 @@ function Auctions($starting_price) //UPDATE pour enchères
 
         //PDO - UPDATE - changement du starting_price dans le tableau ADS
         $query = $dbh->prepare("UPDATE `ads` (`new_price`)
-        SET new_price = $new_price WHERE strating_price = $starting_price ");
+        SET new_price = $new_price WHERE starting_price = $starting_price ");
         $query->bindValue(":new_price", $_POST["new_price"]);
         $query->execute();
 
